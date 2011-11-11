@@ -15,9 +15,11 @@ btn.href = "#";
 btn.target = "_blank";
 btn.innerHTML = "<span>Edit in Cloud9</span>";
 
+/*
 btn.style["background-image"] = "-webkit-gradient(linear, 0% 0%, 0% 100%, from(#15BD3F), to(#1F8739))";
 btn.style["color"] = "white";
 btn.style["text-shadow"] = "1px 1px 0 #009000";
+*/
 
 li.appendChild(btn);
 
