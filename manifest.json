@@ -1,0 +1,14 @@
+{
+  "name": "Open in Cloud9 from GitHub",
+  "version": "1.0.3",
+  "description": "Use the force, Luke!",
+  "icons": {
+    "112" : "c9-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js" : ["githubc9.js"]
+    }
+  ]
+}
