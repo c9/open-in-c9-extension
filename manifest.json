@@ -1,6 +1,6 @@
 {
   "name": "Open in Cloud9 from GitHub",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Use the force, Luke!",
   "icons": {
     "112" : "c9-128.png"
