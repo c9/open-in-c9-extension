@@ -1,9 +1,11 @@
 {
-  "name": "Open in Cloud9 from GitHub",
-  "version": "1.0.4",
-  "description": "Use the force, Luke!",
+  "name": "Cloud9 button for GitHub",
+  "version": "1.0.6",
+  "description": "This extension adds a button to GitHub that lets you edit your projects directly in Cloud9 IDE",
   "icons": {
-    "112" : "c9-128.png"
+    "16" : "c9-16.png",
+    "48" : "c9-48.png",
+    "128" : "c9-128.png"
   },
   "content_scripts": [
     {
