@@ -1,0 +1,11 @@
+{
+    "name": "open_in_c9",
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1",
+    "author": "Cloud9 ( https://github.com/c9 ), Jeff Griffiths ( jgriffiths@mozilla.com )",
+    "version": "0.1",
+    "fullName": "Open In C9",
+    "id": "jid1-RPKK9lbZzCz2JQ",
+    "description": "This extension adds a button to GitHub that lets you edit your projects directly in Cloud9 IDE",
+    "icon": "c9-48.png",
+    "icon64": "c9-48.png"
+}
