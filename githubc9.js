@@ -48,23 +48,23 @@ btn.addEventListener("mouseout", function () {
 
 btn.addEventListener("click", function () {
 	// what's the clone URL?
-    var cloneUrl;
-    var privateClone = document.getElementsByClassName("private_clone_url")[0];
+	var cloneUrl;
+	var privateClone = document.getElementsByClassName("private_clone_url")[0];
 
-    if (privateClone)
-        cloneUrl = privateClone.getElementsByTagName("a")[0].href;
-    else
-	    cloneUrl = document.getElementsByClassName("public_clone_url")[0].getElementsByTagName("a")[0].href;
+	if (privateClone)
+		cloneUrl = privateClone.getElementsByTagName("a")[0].href;
+	else
+		cloneUrl = document.getElementsByClassName("public_clone_url")[0].getElementsByTagName("a")[0].href;
 
-    cloneUrl = cloneUrl.match("git@.*")[0];
+	cloneUrl = cloneUrl.substring(cloneUrl.indexOf("git@"));
 
 	var fileMatch = document.location.href.match(/\bblob\b\/(?:[^\/]+)\/(.*)/);
 	if (fileMatch) {
-    	cloneUrl += "&file=" + fileMatch[1];
+		cloneUrl += "&file=" + fileMatch[1];
 	}
-	
+
 	btn.href = "http://c9.io/open/git/?url=" + cloneUrl;
-	
+
 	return true;
 });
 
