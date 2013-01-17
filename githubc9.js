@@ -48,7 +48,15 @@ btn.addEventListener("mouseout", function () {
 
 btn.addEventListener("click", function () {
 	// what's the clone URL?
-	var cloneUrl = document.getElementsByClassName("public_clone_url")[0].getElementsByTagName("a")[0].href;
+    var cloneUrl;
+    var privateClone = document.getElementsByClassName("private_clone_url")[0];
+
+    if (privateClone)
+        cloneUrl = privateClone.getElementsByTagName("a")[0].href;
+    else
+	    cloneUrl = document.getElementsByClassName("public_clone_url")[0].getElementsByTagName("a")[0].href;
+
+    cloneUrl = cloneUrl.match("git@.*")[0];
 
 	var fileMatch = document.location.href.match(/\bblob\b\/(?:[^\/]+)\/(.*)/);
 	if (fileMatch) {
