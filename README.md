@@ -12,3 +12,4 @@ This is an extension for Google Chrome and Mozilla Firefox that adds 'Edit in Cl
 
 3. Run the ./build.sh script. This copies the current version of 'githubc9.js' and the 48 pixel icon to the firefox extension directory and then creates the xpi archive.
 
+This plugin is released under the MIT [License](https://github.com/c9/open-in-c9-extension/blob/master/LICENSE).
