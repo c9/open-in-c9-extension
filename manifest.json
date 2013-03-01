@@ -1,4 +1,5 @@
 {
+  "manifest-version": 2,
   "name": "Cloud9 button for GitHub",
   "version": "1.0.8",
   "description": "This extension adds a button to GitHub that lets you edit your projects directly in Cloud9 IDE",
