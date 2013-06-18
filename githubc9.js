@@ -90,6 +90,7 @@ function newLayout(target) {
     link.className = "minibutton sidebar-button c9-button";
     link.title = "Open this repository in Cloud9";
     link.rel = "nofollow";
+    link.target = "_blank";
 
     var isPrivate = document.getElementsByClassName("private").length > 0;
     var user = document.querySelectorAll(".author>a>span")[0].textContent;
