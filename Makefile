@@ -7,7 +7,7 @@ open-in-c9: $(INPUT)
 	cp $^ $@
 	
 open-in-c9.zip: open-in-c9 $(INPUT)
-	zip -r $@ $?
+	zip -r $@ open-in-c9
 	
 clean:
 	rm -rf open-in-c9.zip open-in-c9
