@@ -1,6 +1,7 @@
 {
   "name": "Cloud9 button for GitHub",
   "version": "1.0.8",
+  "manifest_version": 2,
   "description": "This extension adds a button to GitHub that lets you edit your projects directly in Cloud9 IDE",
   "icons": {
     "16" : "c9-16.png",
@@ -10,7 +11,11 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
-      "js" : ["githubc9.js"]
+      "js" : ["githubc9.js"],
+      "css": ["styles.css"]
     }
+  ],
+  "web_accessible_resources": [
+    "chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/js/jquery.min.map"
   ]
 }
