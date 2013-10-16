@@ -75,7 +75,7 @@ function oldLayout() {
     		cloneUrl += "&file=" + fileMatch[1];
     	}
 
-    	btn.href = "http://c9.io/open/git/?url=" + cloneUrl;
+    	btn.href = "https://c9.io/open/git/?url=" + cloneUrl;
 
     	return true;
     });
@@ -101,7 +101,7 @@ function newLayout(target) {
     else
         var url = "git://github.com/" + user + "/" + repo + ".git";
         
-    link.href = "http://c9.io/open/git/?url=" + url;
+    link.href = "https://c9.io/open/git/?url=" + url;
     
     var icon = document.createElement("span");
     
