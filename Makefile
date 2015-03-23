@@ -1,4 +1,4 @@
-INPUT = manifest.json githubc9.js styles.css c9-16.png c9-48.png c9-128.png
+INPUT = manifest.json githubc9.user.js styles.css c9-16.png c9-48.png c9-128.png
 
 all: open-in-c9.zip
 

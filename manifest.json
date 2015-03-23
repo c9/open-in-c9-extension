@@ -11,7 +11,7 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
-      "js" : ["githubc9.js"],
+      "js" : ["githubc9.user.js"],
       "css": ["styles.css"]
     }
   ],
