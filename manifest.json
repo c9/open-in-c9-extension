@@ -11,8 +11,7 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
-      "js" : ["githubc9.js"],
-      "css": ["styles.css"]
+      "js" : ["githubc9.js"]
     }
   ],
   "web_accessible_resources": [
