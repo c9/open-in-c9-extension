@@ -11,11 +11,7 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
-      "js" : ["githubc9.js"],
-      "css": ["styles.css"]
+      "js" : ["githubc9.user.js"]
     }
-  ],
-  "web_accessible_resources": [
-    "chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/js/jquery.min.map"
   ]
 }
