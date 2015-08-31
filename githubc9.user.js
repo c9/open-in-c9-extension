@@ -31,7 +31,7 @@ if (target) {
 
     var url = "git@github.com:" + user + "/" + repo + ".git";
 
-    link.href = "https://c9.io/open/git/?url=" + url;
+    link.href = "https://c9.io/auth/github?r=" + encodeURIComponent("https://c9.io/open/?clone_url=" + encodeURIComponent(url));
 
     var icon = document.createElement("span");
     icon.style.cssText = style;
