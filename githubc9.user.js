@@ -16,8 +16,8 @@ var target = document.querySelector(".file-navigation-option");
 if (target) {
 
     var link = document.createElement("a");
-    link.className = "btn btn-sm sidebar-button c9-button";
-    link.title = "Open this repository in Cloud9";
+    link.className = "btn btn-sm c9-button tooltipped tooltipped-s tooltipped-multiline";
+    link.setAttribute("aria-label", "Open this repository in Cloud9");
     link.rel = "nofollow";
     link.target = "_blank";
     link.style.cssText = "margin-left: 7px;";
