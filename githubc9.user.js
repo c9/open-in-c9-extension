@@ -39,6 +39,17 @@ if (target) {
     link.appendChild(icon);
 
     target.parentNode.insertBefore(link, target.nextSibling);
+    
+    var buttons = document.querySelectorAll(".btn-group .btn.btn-sm");
+    for (var i = 0; i < buttons.length; i++) {
+        var b = buttons[i].firstChild;
+        if (b && b.nodeType == 3) {
+            if (/Upload files/.test(b.data))
+                b.data = "Upload";
+            else if (/New file/.test(b.data))
+                b.data = "New";
+        }
+    }
 }
 
 })();
